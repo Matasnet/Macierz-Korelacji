@@ -156,4 +156,3 @@ def update_output(file_contents, file_format, color_scale):
 # Uruchomienie serwera
 if __name__ == '__main__':
     app.run_server(debug=False)
-
