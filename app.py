@@ -6,8 +6,15 @@ import io
 import base64
 import numpy as np
 
+external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+
+
 # Inicjalizacja aplikacji Dash
-app = dash.Dash(__name__)
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+app.title = "Aplikacja do analizy korelacji" 
+app.config.suppress_callback_exceptions = True
+server = app.server
+
 
 # Layout aplikacji
 app.layout = html.Div(style={'fontFamily': 'Arial, sans-serif'}, children=[
